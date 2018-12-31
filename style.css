@@ -1,9 +1,45 @@
+body, html {
+    height: 100%;
+  }
+  
+* {
+    box-sizing: border-box;
+  }
+
 body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     font-weight: 300;
     color: #818181;
   }
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #010101;
+    color: #ffffff;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+  }
+
+.jumbotron {
+    background-color: #141111;
+    font-family: PT Serif;
+    color: #ffffff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+
+.media-body {
+    font-family: Open Sans;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 100px 25px;
+}
 h2 {
     font-size: 24px;
     text-transform: uppercase;
@@ -11,7 +47,24 @@ h2 {
     font-weight: 600;
     margin-bottom: 30px;
 }
+
 p {
 	padding: 0;
 	margin: 0 0 2em;
 }
+
+.bg-img {
+    background-image: url("assets/auditorium_perspective.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow:hidden;
+  }
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  }

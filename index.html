@@ -21,10 +21,10 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!-- Nav -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -56,16 +56,85 @@
 </nav>
 
 <!-- Body -->
-<div id="home" class="jumbotron text-center">
-  <h2>Work In Progress</h1>
-  <p> Come back later </p>
+<div id="home" class="bg-img text-center">
+  <br><br><br><br> <!-- TODO: Fix this alignment problem hax -->
+  <div class="media">
+    <div class="media-middle media-bottom">
+      <img class="aligncenter" src="assets/sp.png" class="media-object"  style="width:300px">
+    </div>
+    <div class="media-body">
+      <p>Experience their aura,</p>
+      <p>create yours!</p>
+      <a href="#about" class="btn btn-default" role="button">Begin Now</a>
+    </div>
+  </div>
+  <div class="jumbotron text-center">
+    <p>“Whether you think you can, or you think you can’t–you’re right.”</p><br>
+    <h6> Henry Ford </h6>
+  </div>
 </div>
 
 <!-- About -->
-<div class="container">
-  <div id="about" class="jumbotron text-center">
-    <h2>Who we are?</h1>
-    <p>SPARSH, a techno cultural club saw it’s inception in the year 2014. Formed by the then Computer Science and Engineering students of Sri Jayachamarajendra College of Engineering now known as, JSS Science and Technology University, SPARSH was found to be hugely appreciated by students for the club’s activities and it’s well known “SPARSH talks”. SPARSH caters to students’ desires and invites their role models to our campus. All kinds of special people ranging from singer, sportsperson, writer, actor etc., to scientist, engineer, CEO etc., are invited, all of whom have a past to share, success to celebrate, profound talents to showcase or life lessons to teach. Through SPARSH talks, students have met, talked and expressed their ideas, beliefs or fear in realising their dreams, while learning a lot from what the big people had to say about their life, struggles and many things more.</p>
+<div id="about" class="container text-center">
+  <h2>Who we are?</h2>
+  <p>SPARSH, a techno cultural club saw it’s inception in the year 2014. Formed by the then Computer Science and Engineering students of Sri Jayachamarajendra College of Engineering now known as, JSS Science and Technology University, SPARSH was found to be hugely appreciated by students for the club’s activities and it’s well known “SPARSH talks”. SPARSH caters to students’ desires and invites their role models to our campus. All kinds of special people ranging from singer, sportsperson, writer, actor etc., to scientist, engineer, CEO etc., are invited, all of whom have a past to share, success to celebrate, profound talents to showcase or life lessons to teach. Through SPARSH talks, students have met, talked and expressed their ideas, beliefs or fear in realising their dreams, while learning a lot from what the big people had to say about their life, struggles and many things more.</p>
+</div>
+
+<!-- Gallery -->
+<div id="gallery" class="container text-center">
+  <h2>Gallery</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="assets/vp.jpg" alt="VP" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="assets/as.jpg" alt="AS" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="assets/vs.jpg" alt="VS" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="assets/v.jpg" alt="v" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="assets/vn.jpg" alt="vn" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="assets/vp1.jpg" alt="vp1" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="assets/vg.jpg" alt="vg" width="460" height="345">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 </div>
 
