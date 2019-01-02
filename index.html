@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Sparsh</title>
@@ -11,14 +11,19 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- Font Awesome -->
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Fonts -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" >
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:300,400,600,700&amp;lang=en" />
 
   <!-- Personal Includes -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.0/slick/slick.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="transitions.css">
   <script src="script.js"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -32,7 +37,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Sparsh</a>
+      <a class="navbar-brand" href="#">SPARSH</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -48,27 +53,27 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#signup"><span class="fa fa-user"></span> Sign Up</a></li>
+        <li><a href="#login"><span class="fa fa-sign-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- Body -->
-<div id="home" class="bg-img text-center">
+<div id="home" class="bg-img-hdr text-center">
   <br><br><br><br> <!-- TODO: Fix this alignment problem hax -->
   <div class="media">
     <div class="media-middle media-bottom">
-      <img class="aligncenter" src="assets/sp.png" class="media-object"  style="width:300px">
+      <img class="aligncenter fade-in one" src="assets/sp.png" class="media-object"  style="width:300px">
     </div>
     <div class="media-body">
-      <p>Experience their aura,</p>
-      <p>create yours!</p>
-      <a href="#about" class="btn btn-default" role="button">Begin Now</a>
+      <p class="fade-in two">Experience their aura,</p>
+      <p class="fade-in three">create yours!</p>
+      <a href="#about" class="btn btn-default fade-in four" role="button">Begin Now</a>
     </div>
   </div>
-  <div class="jumbotron text-center">
+  <div class="jumbotron" id="j1">
     <p>“Whether you think you can, or you think you can’t–you’re right.”</p><br>
     <h6> Henry Ford </h6>
   </div>
@@ -76,67 +81,47 @@
 
 <!-- About -->
 <div id="about" class="container text-center">
+<br><br>
   <h2>Who we are?</h2>
   <p>SPARSH, a techno cultural club saw it’s inception in the year 2014. Formed by the then Computer Science and Engineering students of Sri Jayachamarajendra College of Engineering now known as, JSS Science and Technology University, SPARSH was found to be hugely appreciated by students for the club’s activities and it’s well known “SPARSH talks”. SPARSH caters to students’ desires and invites their role models to our campus. All kinds of special people ranging from singer, sportsperson, writer, actor etc., to scientist, engineer, CEO etc., are invited, all of whom have a past to share, success to celebrate, profound talents to showcase or life lessons to teach. Through SPARSH talks, students have met, talked and expressed their ideas, beliefs or fear in realising their dreams, while learning a lot from what the big people had to say about their life, struggles and many things more.</p>
 </div>
 
-<!-- Gallery -->
-<div id="gallery" class="container text-center">
-  <h2>Gallery</h2>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-      <li data-target="#myCarousel" data-slide-to="6"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="assets/vp.jpg" alt="VP" width="460" height="345">
-      </div>
-
-      <div class="item">
-        <img src="assets/as.jpg" alt="AS" width="460" height="345">
-      </div>
-    
-      <div class="item">
-        <img src="assets/vs.jpg" alt="VS" width="460" height="345">
-      </div>
-
-      <div class="item">
-        <img src="assets/v.jpg" alt="v" width="460" height="345">
-      </div>
-
-      <div class="item">
-        <img src="assets/vn.jpg" alt="vn" width="460" height="345">
-      </div>
-
-      <div class="item">
-        <img src="assets/vp1.jpg" alt="vp1" width="460" height="345">
-      </div>
-
-      <div class="item">
-        <img src="assets/vg.jpg" alt="vg" width="460" height="345">
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+<!-- Recent Events -->
+<div id="recent" class="jumbotron text-center">
+<br><br>
+  <h2>Recent Events - Work In Progress</h1>
+  <p>Sparsh talk-4, which was the last talk of the academic year 2017 – 2018 was held on 24th march, 2018. The speaker of the program was Navkanta Bhat, Professor and Chairperson of Nano-science technology department in IISC Bangalore. He is also the founder and CEO of Pathshodh healthcare. We are very privileged to have had the professor in our college to address the students, despite his busy schedule. </p>
 </div>
 
+<!-- Gallery -->
+<div id="gallery" class="container text-center custom-height">
+<br><br>
+  <h2>Gallery<h2>
+<div class="carousel">
+  <div class="thumbnail"><img src="assets/vp.jpg"></div>
+  <div class="thumbnail"><img src="assets/as.jpg"></div>
+  <div class="thumbnail"><img src="assets/vs.jpg"></div>
+  <div class="thumbnail"><img src="assets/v.jpg"></div>
+  <div class="thumbnail"><img src="assets/vn.jpg"></div>
+  <div class="thumbnail"><img src="assets/vp1.jpg"></div>
+  <div class="thumbnail"><img src="assets/vg.jpg"></div>
+</div>
+</div><br><br>
+
+<!-- Contact Us -->
+<div id="contact" class="bg-img-ftr text-center tint">
+  <br><br><br><br>
+  <div class="jumbotron" id="ftr">
+    <p>Work Under Progress</p><br>
+    <p>Please come back later. </p>
+  </div>
+  <br><br><br><br>
+</div>
+
+<!-- Footer -->
+<div class="jumbotron text-center">
+  <p>Footer Under Progress</p><br>
+  <p>Please come back later. </p>
+</div>
 </body>
 </html>

@@ -1,21 +1,21 @@
 body, html {
     height: 100%;
-  }
+}
   
 * {
     box-sizing: border-box;
-  }
+}
 
 body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     font-weight: 300;
     color: #818181;
-  }
+}
 
 .navbar {
     margin-bottom: 0;
-    background-color: #010101;
+    background-color: rgba(0,0,0,0.75);
     color: #ffffff;
     z-index: 9999;
     border: 0;
@@ -23,37 +23,65 @@ body {
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
-  }
+}
 
-.jumbotron {
-    background-color: #141111;
-    font-family: PT Serif;
+.navbar-default .navbar-brand {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 1.31667px;
+    line-height: 28.8px;
     color: #ffffff;
-    padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
-  }
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 300;
+    text-indent: 0px;
+    line-height: 29.6px;
+    word-spacing: 0px;
+    color: #ffffff;
+}
+
+#j1 {
+    font-family: 'PT Serif';
+    font-size: 24px;
+    line-height: 29.6px;
+    font-weight: 300;
+    background-color: #000000;
+    color: #ffffff;
+    margin-bottom: 0;
+}
 
 .media-body {
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     color: #ffffff;
     font-size: 25px;
     font-weight: 300;
     padding: 100px 25px;
+    line-height: 64.9667px;
+    margin: 0;
 }
+
 h2 {
-    font-size: 24px;
+    font-family: Open Sans;
+    color: #4d4d4d;
+    font-size: 46.4px;
+    line-height: 64.9667px;
+    letter-spacing: -1.61667px;
     text-transform: uppercase;
     color: #303030;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 30px;
 }
 
 p {
 	padding: 0;
-	margin: 0 0 2em;
+	margin: 0;
 }
 
-.bg-img {
+.bg-img-hdr {
     background-image: url("assets/auditorium_perspective.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -61,10 +89,71 @@ p {
     background-size: cover;
     position: relative;
     overflow:hidden;
-  }
+    -webkit-filter: grayscale(25%);
+}
 
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-    width: 70%;
-    margin: auto;
-  }
+.bg-img-ftr {
+  background-image: url("assets/IMG_0862-ed.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow:hidden;
+}
+
+#ftr {
+  background-color: rgba(0,0,0,0.75);
+}
+
+div:hover.tint {
+    opacity: 1;
+    -webkit-filter: grayscale(50%);
+    transition: .5s ease-in;
+}
+
+.thumbnail {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.thumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+  
+.wrapper{
+    width:100%;
+    padding-top: 20px;
+    text-align:center;
+}
+
+.carousel{
+    width:90%;
+    margin:0px auto;
+}
+
+.slick-slide{
+    margin: 0 1px;
+}
+
+.slick-slide img{
+    width:100%;
+    border: 0.5px solid #fff;
+}
+
+  .slick-prev:before {
+    color: #000000;
+}
+
+  .slick-next:before {
+    color: #000000;
+}
