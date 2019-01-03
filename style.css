@@ -44,6 +44,26 @@ body {
     color: #ffffff;
 }
 
+.btn-primary-outline {
+	background-color: transparent;
+	color: #ffffff;
+	border-color: #ffffff;
+	transition: .25s ease-in;
+}
+
+.btn-primary-outline:hover, .btn-primary-outline:focus, .btn-primary-outline:active, .btn-primary-outline.active {
+    background: #ffffff;
+    color: #000000;
+    transition: .25s ease-in;
+}
+ 
+.btn-primary-outline:active, .btn-primary-outline.active {
+    background: #ffffff;
+    color: #000000;
+    box-shadow: none;
+    transition: .5s ease-in;
+}
+
 #j1 {
     font-family: 'PT Serif';
     font-size: 24px;
