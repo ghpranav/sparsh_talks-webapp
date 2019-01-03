@@ -116,20 +116,32 @@ p {
   background-image: url("assets/IMG_0862-ed.jpg");
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   overflow:hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 #ftr {
   background-color: rgba(0,0,0,0.75);
 }
 
+div.tint {
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+
 div:hover.tint {
     opacity: 1;
-    -webkit-filter: grayscale(50%);
-    transition: .5s ease-in;
+    -webkit-filter: brightness(75%);
 }
 
 .thumbnail {
