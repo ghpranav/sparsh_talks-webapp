@@ -137,10 +137,18 @@ p {
   padding-bottom: 10%;
 }
 
-#ftr {
-  background-color: rgba(0,0,0,0.75);
+#ftr, #ftr p {
+    font-family: 'Open Sans';
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 29.6px;
+    font-weight: 300;
 }
 
+#ftr h2 {
+    font-family: 'Open Sans';
+    color: #ffffff;
+}
 div.tint {
     -webkit-transition: all 0.5s linear;
        -moz-transition: all 0.5s linear;
@@ -149,10 +157,9 @@ div.tint {
             transition: all 0.5s linear;
 }
 
-
 div:hover.tint {
     opacity: 1;
-    -webkit-filter: brightness(75%);
+    -webkit-filter: brightness(85%);
 }
 
 .thumbnail {
