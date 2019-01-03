@@ -92,6 +92,15 @@ body {
     color: #ffffff;
 }
 
+#j2 {
+    font-size: 12.2333px;
+    line-height: 22.0167px;
+    font-weight: 300;
+    background-color: #292929;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
 .media-body p {
     color: rgba(255, 255, 255, 0.91);
     font-family: 'Open Sans';
