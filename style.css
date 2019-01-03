@@ -72,16 +72,31 @@ body {
     background-color: #000000;
     color: #ffffff;
     margin-bottom: 0;
+    margin-top: 250px;
 }
 
-.media-body {
-    font-family: 'Open Sans';
+#j1 p {
+    font-family: 'PT Serif';
+    font-size: 24px;
+    line-height: 29.6px;
+    font-weight: 300;
     color: #ffffff;
+}
+
+#j1 h6 {
+    font-family: 'PT Serif';
+    font-size: 14px;
+    line-height: 19.6px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.media-body p {
+    color: rgba(255, 255, 255, 0.91);
+    font-family: 'Open Sans';
     font-size: 25px;
     font-weight: 300;
-    padding: 100px 25px;
-    line-height: 64.9667px;
-    margin: 0;
+    line-height: 29.6px;
 }
 
 h2 {
@@ -120,7 +135,7 @@ p {
     background-size: cover;
     position: relative;
     overflow:hidden;
-    -webkit-filter: grayscale(25%);
+    -webkit-filter: grayscale(35%);
 }
 
 .bg-img-ftr {
