@@ -1,29 +1,29 @@
-$(document).ready(function(){
+$(document).ready(function () {
   $('#Login-Form').parsley();
   $('#Signin-Form').parsley();
   $('#Forgot-Password-Form').parsley();
-    	
-  $('#signupModal').click(function(){			    		
-  	$('#login-modal-content').fadeOut('fast', function(){
-  	   $('#signup-modal-content').fadeIn('fast');
+
+  $('#signupModal').click(function () {
+    $('#login-modal-content').fadeOut('fast', function () {
+      $('#signup-modal-content').fadeIn('fast');
     });
   });
-    		   		
-  $('#loginModal').click(function(){			    			
-    $('#signup-modal-content').fadeOut('fast', function(){
-       $('#login-modal-content').fadeIn('fast');
+
+  $('#loginModal').click(function () {
+    $('#signup-modal-content').fadeOut('fast', function () {
+      $('#login-modal-content').fadeIn('fast');
     });
   });
-    		
-  $('#FPModal').click(function(){			   			
-    $('#login-modal-content').fadeOut('fast', function(){
-       $('#forgot-password-modal-content').fadeIn('fast');
+
+  $('#FPModal').click(function () {
+    $('#login-modal-content').fadeOut('fast', function () {
+      $('#forgot-password-modal-content').fadeIn('fast');
     });
   });
-    		
-  $('#loginModal1').click(function(){			    			
-    $('#forgot-password-modal-content').fadeOut('fast', function(){
-       $('#login-modal-content').fadeIn('fast');
+
+  $('#loginModal1').click(function () {
+    $('#forgot-password-modal-content').fadeOut('fast', function () {
+      $('#login-modal-content').fadeIn('fast');
     });
   });
 
@@ -35,8 +35,7 @@ $(document).ready(function(){
     autoplaySpeed: 2000,
     slidesToShow: 4,
     slidesToScroll: 1,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
@@ -62,8 +61,8 @@ $(document).ready(function(){
   });
 });
 
-$(document).on('click','.navbar-collapse.in',function(e) {
-    if( $(e.target).is('a:not(".dropdown-toggle")') ) {
-        $(this).collapse('hide');
-    }
+$(document).on('click', '.navbar-collapse.in', function (e) {
+  if ($(e.target).is('a:not(".dropdown-toggle")')) {
+    $(this).collapse('hide');
+  }
 });
