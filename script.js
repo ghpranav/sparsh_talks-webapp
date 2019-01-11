@@ -1,7 +1,5 @@
 $(document).ready(function () {
-  $('#Login-Form').parsley();
-  $('#Signin-Form').parsley();
-  $('#Forgot-Password-Form').parsley();
+  $('#myForm').validator();
 
   $('#signupModal').click(function () {
     $('#login-modal-content').fadeOut('fast', function () {

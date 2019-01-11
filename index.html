@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
@@ -25,7 +26,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css" />
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.0/slick/slick.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.1/parsley.min.js"></script>
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="transitions.css">
   <script src="script.js"></script>
@@ -181,29 +182,28 @@
         </div>
 
         <div class="modal-body">
-          <form method="post" id="Login-Form" role="form">
+          <form method="post" id="Login-Form" role="form" data-toggle="validator">
 
             <div class="form-group">
-              <div class="input-group">
-                <div class="input-group-addon"><span class="fas fa-envelope"></span></div>
-                <input name="email" id="email" type="email" class="form-control input-lg" placeholder="Enter Email"
-                  required data-parsley-type="email">
-              </div>
+              <label for="inputEmail" class="control-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Email Address is invalid!"
+                required>
+              <div class="help-block with-errors"></div>
             </div>
 
 
             <div class="form-group">
-              <div class="input-group">
-                <div class="input-group-addon"><span class="fas fa-lock"></i></span></div>
-                <input name="password" id="login-password" type="password" class="form-control input-lg" placeholder="Enter Password"
-                  required data-parsley-length="[6, 10]" data-parsley-trigger="keyup">
-              </div>
+              <label for="inputPassword" class="control-label">Password</label>
+              <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password"
+                required>
             </div>
 
             <div class="checkbox">
               <label><input type="checkbox" value="" checked>Remember me</label>
             </div>
-            <button type="submit" class="btn btn-success btn-block btn-lg">LOGIN</button>
+            <div class="form-group">
+              <button type="submit" class="btn btn-success btn-block btn-lg">Login</button>
+            </div>
           </form>
         </div>
 
@@ -226,85 +226,80 @@
         </div>
 
         <div class="modal-body">
-          <form method="post" id="Signin-Form" role="form">
+          <form method="post" id="Signin-Form" role="form" data-toggle="validator">
 
             <div class="form-group">
-              <div class="input-group">
-                <div class="input-group-addon"><span class="fas fa-user"></span></div>
-                <input name="name" id="name" type="text" class="form-control input-lg" placeholder="Enter Full Name"
-                  required data-parsley-type="name">
+              <label for="inputName" class="control-label">Full Name</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Enter Full Name" data-minlength="2"
+                data-error="Enter your Full Name!" required>
+              <div class="help-block with-errors"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputEmail" class="control-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Email Address is invalid!"
+                required>
+              <div class="help-block with-errors"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputDept" class="control-label">Year</label>
+              <select name="inputDept" id="inputDept" class="form-control selectpicker" required>
+                <option value="">Select your Department</option>
+                <option>CS</option>
+                <option>IS</option>
+                <option>EC</option>
+                <option>EE</option>
+                <option>IT</option>
+                <option>Civil</option>
+                <option>CTM</option>
+                <option>ENV</option>
+                <option>IP</option>
+                <option>Mech</option>
+                <option>PST</option>
+                <option>BT</option>
+                <option>BCA</option>
+                <option>MCA</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="inputYear" class="control-label">Year</label>
+              <select name="inputYear" id="inputYear" class="form-control selectpicker" required>
+                <option value="">Select your Year</option>
+                <option>I</option>
+                <option>II</option>
+                <option>III</option>
+                <option>IV</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="inputNumber" class="control-label">Number</label>
+              <input class="form-control" id="inputNumber" placeholder="Enter Mobile Number" data-error="Enter valid mobile number!"
+                data-minlength="10" data-maxlength="12" required>
+              <div class="help-block with-errors"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputPassword" class="control-label">Password</label>
+              <div class="form-inline row">
+                <div class="form-group col-sm-6">
+                  <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password"
+                    required>
+                  <div class="help-block">Minimum of 6 characters</div>
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword"
+                    data-match-error="Passwords don't match!" placeholder="Confirm" required>
+                  <div class="help-block with-errors"></div>
+                </div>
               </div>
             </div>
 
             <div class="form-group">
-              <div class="input-group">
-                <div class="input-group-addon"><span class="fas fa-envelope"></i></span></div>
-                <input name="email" id="email" type="email" class="form-control input-lg" placeholder="Enter Email"
-                  required data-parsley-type="email">
-              </div>
+              <button type="submit" class="btn btn-success btn-block btn-lg">Sign Up</button>
             </div>
-
-            <div class="form-group">
-              <div class="input-group">
-                <div class="input-group-addon"><span class="fas fa-book-reader"></i></span></div>
-                <select name="dept" id="dept" class="form-control selectpicker" required>
-                  <option value="">Select your Department</option>
-                  <option>CS</option>
-                  <option>IS</option>
-                  <option>EC</option>
-                  <option>EE</option>
-                  <option>IT</option>
-                  <option>Civil</option>
-                  <option>CTM</option>
-                  <option>ENV</option>
-                  <option>IP</option>
-                  <option>Mech</option>
-                  <option>PST</option>
-                  <option>BT</option>
-                  <option>BCA</option>
-                  <option>MCA</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="input-group">
-                <div class="input-group-addon"><span class="fas fa-graduation-cap"></i></span></div>
-                <select name="year" id="year" class="form-control selectpicker" required>
-                  <option value="">Select your Year</option>
-                  <option>I</option>
-                  <option>II</option>
-                  <option>III</option>
-                  <option>IV</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="input-group">
-                <div class="input-group-addon"><span class="fas fa-mobile"></i></span></div>
-                <input name="number" id="number" data-parsley-type="number" placeholder="Enter Mobile Number" required
-                  data-parsley-minlength="10" data-parsley-maxlength="12">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="input-group">
-                <div class="input-group-addon"><span class="fas fa-lock"></i></span></div>
-                <input name="password" id="passwd" type="password" class="form-control input-lg" placeholder="Enter Password"
-                  required data-parsley-length="[6, 10]" data-parsley-trigger="keyup">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="input-group">
-                <div class="input-group-addon"><span class="fas fa-lock"></i></span></div>
-                <input name="password" id="confirm-passwd" type="password" class="form-control input-lg" placeholder="Retype Password"
-                  required data-parsley-equalto="#passwd" data-parsley-trigger="keyup">
-              </div>
-            </div>
-
-            <button type="submit" class="btn btn-success btn-block btn-lg">CREATE ACCOUNT!</button>
           </form>
         </div>
 
@@ -324,19 +319,19 @@
         </div>
 
         <div class="modal-body">
-          <form method="post" id="Forgot-Password-Form" role="form">
+          <form method="post" id="Forgot-Password-Form" role="form" data-toggle="validator">
 
             <div class="form-group">
-              <div class="input-group">
-                <div class="input-group-addon"><span class="fas fa-envelope"></span></div>
-                <input name="email" id="email" type="email" class="form-control input-lg" placeholder="Enter Email"
-                  required data-parsley-type="email">
-              </div>
+              <label for="inputEmail" class="control-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Email Address is invalid!"
+                required>
+              <div class="help-block with-errors"></div>
             </div>
 
-            <button type="submit" class="btn btn-success btn-block btn-lg">
-              <span class="fas fa-share-square"></i></span> SUBMIT
-            </button>
+            <div class="form-group">
+              <span class="fas fa-share-square"></i></span><button type="submit" class="btn btn-success btn-block btn-lg">Submit</button>
+            </div>
+
           </form>
         </div>
 
