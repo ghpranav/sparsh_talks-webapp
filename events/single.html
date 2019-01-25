@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sparsh</title>
+    <link rel="shortcut icon" type="image/x-icon" href="..\assets\logo.PNG" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+
+    <link rel="stylesheet" href="events.css">
+    <script src="events.js"></script>
+
+</head>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">SPARSH</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body id="singleEvent">
+    <br><br>
+    <div id="about" class="container text-center">
+        <br><br>
+        <h2>Navkanta Bhat</h2>
+        <img src="..\assets\navkant.jpg" class="img-responsive center-block"><br>
+        <p>Sparsh talk-4, which was the last talk of the academic year 2017 – 2018 was held on 24th march, 2018. The
+            speaker of the program was Navkanta Bhat, Professor and Chairperson of Nano-science technology department
+            in IISC Bangalore. He is also the founder and CEO of Pathshodh healthcare. We are very privileged to have
+            had the professor in our college to address the students, despite his busy schedule. </p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="page-header">Comments</h2>
+                <section class="comment-list">
+                    <!-- First Comment -->
+                    <article class="row">
+                        <div class="col-md-2 col-sm-2 hidden-xs">
+                            <figure class="thumbnail">
+                                <img class="img-responsive" src="http://www.tangoflooring.ca/wp-content/uploads/2015/07/user-avatar-placeholder.png" />
+                                <figcaption class="text-center">username</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-10 col-sm-10">
+                            <div class="panel panel-default arrow left">
+                                <div class="panel-body">
+                                    <header class="text-left">
+                                        <div class="comment-user"><span class="far fa-user"></span> That Guy</div>
+                                        <time class="comment-date" datetime="25-01-2019 01:05"><span class="far fa-clock"></span>
+                                            Jan 25, 2019</time>
+                                    </header>
+                                    <div class="comment-post">
+                                        <p>
+                                            Jane Doe!
+                                        </p>
+                                    </div>
+                                    <p class="text-right"><a href="#" class="btn btn-default btn-sm"><span class="fas fa-reply"></span>
+                                            reply</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Second Comment Reply -->
+                    <article class="row">
+                        <div class="col-md-2 col-sm-2 col-md-offset-1 col-sm-offset-0 hidden-xs">
+                            <figure class="thumbnail">
+                                <img class="img-responsive" src="http://www.tangoflooring.ca/wp-content/uploads/2015/07/user-avatar-placeholder.png" />
+                                <figcaption class="text-center">username</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-9 col-sm-9">
+                            <div class="panel panel-default arrow left">
+                                <div class="panel-heading right">Reply</div>
+                                <div class="panel-body">
+                                    <header class="text-left">
+                                        <div class="comment-user"><span class="far fa-user"></span> This Guy</div>
+                                        <time class="comment-date" datetime="25-01-2019 01:05"><i class="far fa-clock"></i>
+                                            Jan 25, 2019</time>
+                                    </header>
+                                    <div class="comment-post">
+                                        <p>
+                                            Potato.
+                                        </p>
+                                    </div>
+                                    <p class="text-right"><a href="#" class="btn btn-default btn-sm"><span class="fas fa-reply"></span>
+                                            reply</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <div class="form-group">
+                        <label for="description">Reply</label>
+                        <textarea rows="5" class="form-control" name="description"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">
+                            Share
+                        </button>
+                        <button class="btn btn-default">
+                            Cancel
+                        </button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

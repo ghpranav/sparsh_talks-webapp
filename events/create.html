@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sparsh</title>
+    <link rel="shortcut icon" type="image/x-icon" href="..\assets\logo.PNG" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+
+    <link rel="stylesheet" href="events.css">
+    <script src="events.js"></script>
+
+</head>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..\index.html">SPARSH</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="..\index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body id="createEvent">
+    <br><br>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-8 col-md-offset-2">
+
+                <h1>Create post</h1>
+
+                <form action="" method="POST">
+
+                    <div class="form-group">
+                        <label for="title">Speaker Name</label>
+                        <input type="text" class="form-control" name="title" />
+                    </div>
+
+                    <div class="input-group">
+                        <label for="description">Image Upload</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea rows="5" class="form-control" name="description"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">
+                            Submit
+                        </button>
+                        <button class="btn btn-default">
+                            Cancel
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
