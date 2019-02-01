@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sparsh</title>
+    <link rel="shortcut icon" type="image/x-icon" href="..\assets\logo.PNG" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+
+    <!-- Personal Includes -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="transitions.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body id="singleEvent">
+    <!-- Nav -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html#home">SPARSH</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html#recent">Recent Events</a></li>
+                            <li><a href="index.html#upcoming">Upcoming Event</a></li>
+                            <li><a href="events.html">Past Events</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+    <div id="about" class="container text-center">
+        <br><br>
+        <h2>Navkanta Bhat</h2>
+        <img src="assets\navkant.jpg" class="img-responsive center-block"><br>
+        <p>Sparsh talk-4, which was the last talk of the academic year 2017 – 2018 was held on 24th march, 2018. The
+            speaker of the program was Navkanta Bhat, Professor and Chairperson of Nano-science technology department
+            in IISC Bangalore. He is also the founder and CEO of Pathshodh healthcare. We are very privileged to have
+            had the professor in our college to address the students, despite his busy schedule. </p>
+    </div>
+
+    <br><br>
+    <div class="container">
+        <div class="form-group">
+            <label for="description">Reply</label>
+            <textarea rows="5" class="form-control" name="description"></textarea>
+        </div>
+
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">
+                Share
+            </button>
+            <button class="btn btn-default">
+                Cancel
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>
